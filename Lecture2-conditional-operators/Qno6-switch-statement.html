@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+<script>
+
+let day = prompt("Enter the day you want to know about!");
+// switch(day)
+// {
+//     case "monday": console.log("lecture1");
+//     break;
+//     case "tuesday": console.log("lecture2");
+//     break;
+//     case "wednesday": console.log("lecture3");
+//     break;
+//     case "thursday": console.log("lecture4");
+//     break;
+//     case "friday": console.log("lecture5");
+//     break;
+//     case "saturday": console.log("lecture6");
+//     break;
+//     case "sunday": console.log("lecture7");
+//     break;
+//     default: console.log("you have entered invalid day");
+
+// }
+
+
+
+
+
+// if we remove break where our condition must be true then next all without break execute
+// in this code we wanna execute first case but all after this without break will also run
+// switch(day)
+// {
+//     case "monday": console.log("lecture1");
+//     case "tuesday": console.log("lecture2");
+//     case "wednesday": console.log("lecture3");
+//     break;
+//     case "thursday": console.log("lecture4");
+//     break;
+//     case "friday": console.log("lecture5");
+//     break;
+//     case "saturday": console.log("lecture6");
+//     break;
+//     case "sunday": console.log("lecture7");
+//     break;
+//     default: console.log("you have entered invalid day");
+
+// }
+
+// if we remove all break points before true statement then no error exist bc the flow of code 
+// run away where the condition true
+
+
+// we wanna execute case thirsday but before all that statemetn not be effected
+// switch(day)
+// {
+//     case "monday": console.log("lecture1");
+//     break;
+//     case "tuesday": console.log("lecture2");
+//     break;
+//     case "wednesday": console.log("lecture3");
+//     case "thursday": console.log("lecture4");
+//     case "friday": console.log("lecture5");
+//     break;
+//     case "saturday": console.log("lecture6");
+//     break;
+//     case "sunday": console.log("lecture7");
+//     break;
+//     default: console.log("you have entered invalid day");
+
+// }
+
+
+
+// multiple condition but same execution
+// switch(day)
+// {
+//     case "monday":
+//     case "tuesday":
+//     case "wednesday":
+//                 console.log("lecture3")
+//     break;
+//     case "thursday":
+//     case "friday":
+//     case "saturday": 
+//                 console.log("lecture6");
+//     break;
+//     case "sunday": console.log("lecture7");
+//     break;
+//     default: console.log("you have entered invalid day");
+
+// }
+
+switch(true){
+    case 10>5: console.log("10>5 is a true");
+    break;
+    case 6>5: console.log("6>5 is a true");
+    break;
+    default: console.log("all conditions are fall")
+}
+
+
+
+
+</script>
+</body>
+</html>
