@@ -7,27 +7,64 @@
 </head>
 <body>
 <script>
+
+// first massi method
+
+
+// let amount = Number(prompt("Your purchasing amount?"));
+// if(isNaN(amount) || amount <= 0)
+// {
+//     console.log("your purchasing amount is not valid");
+// }
+// else if(amount > 0 && amount <= 5000)
+// {
+//     console.log("you dont't have any discount for this purchase amount");
+// }
+// else if(amount > 5000 && amount <= 7000)
+// {
+//     console.log("with 5% discount your total is: ", amount - Math.floor((5*amount)/100));
+// }
+// else if(amount > 7000 && amount <= 9000)
+// {
+//     console.log("with 10% discount your total is: ", amount - Math.floor((10*amount)/100));
+// }
+// else
+// {
+//     console.log("with 20% discount your total is: ", amount - Math.floor((20*amount)/100));
+// }
+
+
+
+
+// second method
 let amount = Number(prompt("Your purchasing amount?"));
-if(isNaN(amount) || amount <= 0)
-{
-    console.log("your purchasing amount is not valid");
+
+if (isNaN(amount) || amount <= 0) {
+    console.log("Your purchasing amount is not valid");
+} else {
+    let dis = 0;
+
+    if (amount <= 5000) {
+        dis = 0;
+    } else if (amount <= 7000) {
+        dis = 5;
+    } else if (amount <= 9000) {
+        dis = 10;
+    } else {
+        dis = 20;
+    }
+
+    let discountAmount = Math.floor((dis * amount) / 100);
+    let total = amount - discountAmount;
+
+    console.log(`With ${dis}% discount, your total is: ${total}`);
 }
-else if(amount > 0 && amount <= 5000)
-{
-    console.log("you dont't have any discount for this purchase amount");
-}
-else if(amount > 5000 && amount <= 7000)
-{
-    console.log("with 5% discount your total is: ", amount - Math.floor((5*amount)/100));
-}
-else if(amount > 7000 && amount <= 9000)
-{
-    console.log("with 10% discount your total is: ", amount - Math.floor((10*amount)/100));
-}
-else
-{
-    console.log("with 20% discount your total is: ", amount - Math.floor((20*amount)/100));
-}
+
+
+
+
+
+
 </script>
 </body>
 </html>
