@@ -97,13 +97,33 @@ let day = prompt("Enter the day you want to know about!");
 
 // }
 
-switch(true){
-    case 10>5: console.log("10>5 is a true");
+
+
+
+
+// if both are true then first will be execute 
+// switch(true){
+//     case 10>5: console.log("10>5 is a true");
+//     break;
+//     case 6>5: console.log("6>5 is a true");
+//     break;
+//     default: console.log("all conditions are fall")
+// }
+
+
+// if we add 2 amount which are decimal then what effect 
+let a = 0.2 + 0.4;
+let amount = Number(a.toFixed(1));
+console.log( typeof amount); // output 0.600000001 
+
+switch(amount)
+{
+    case 0.6: console.log("0.6 is true");
     break;
-    case 6>5: console.log("6>5 is a true");
-    break;
-    default: console.log("all conditions are fall")
+    case 0.8: console.log("0.8 is true");
+    default: console.log("all condition falls");
 }
+// the output is all condition falls bc value is decimal but we fix that with n.toFixed()
 
 
 
