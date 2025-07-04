@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number</title>
+</head>
+<body>
+<script>
+// // prime number with simple method
+// let num = +prompt("Enter your number");
+// if(!num || !Number.isInteger(num) || num<=0)
+// {
+//     console.log("Cancelled or you have entered invalid number");
+// }
+// else
+// {
+//     let isPrime = true;
+//     for(let i=2; i<=Math.floor(num/2); i++)
+//     {
+//         if(num % i === 0)
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     console.log(`${num}, its a prime number: ${isPrime}`);
+// }
+
+
+
+
+
+
+// prime number with advance method or logic
+// ─── Prompt + quick validation ──────────────────────────────────────────────
+const num = +prompt("Enter an integer > 1:");
+
+if (!Number.isInteger(num) || num <= 1) {
+  console.log("Invalid number (enter an integer greater than 1)");
+} else {
+  console.log(`${num} is prime: ${isPrime(num)}`);
+}
+
+// ─── Re‑usable prime‑checker (arrow function) ───────────────────────────────
+function isPrime(n){
+  if (n === 2) return true;        // 2 is the only even prime
+  if (n % 2 === 0) return false;   // even numbers >2 are not prime
+
+  const limit = Math.floor(Math.sqrt(n));
+  for (let i = 3; i <= limit; i += 2) { // test odd divisors only
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+
+</script>
+</body>
+</html>
