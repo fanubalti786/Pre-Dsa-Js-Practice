@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factors of number</title>
+</head>
+<body>
+<script>
+
+    
+// let num = +prompt("Enter your number");
+// if(!num || !Number.isInteger(num) || num<=0)
+// {
+//     console.log("Cancelled or you have entered invalid number");
+// }
+// else
+// {
+//     for(let i=1; i<=num; i++)
+//     {
+//         if(num % i === 0)
+//         {
+//             console.log(`${i} is a factor of ${num} \n`);
+            
+//         }
+//     }
+// }
+
+
+
+// more efficent method which is called low memory consuming with halfing concept
+let num = +prompt("Enter your number");
+if(!num || !Number.isInteger(num) || num<=0)
+{
+    console.log("Cancelled or you have entered invalid number");
+}
+else
+{
+    for(let i=1; i<=num/2; i++)
+    {
+        if(num % i === 0)
+        {
+            console.log(`${i} is a factor of ${num} \n`);
+            
+        }
+    }
+    console.log(`${num} is a factor of ${num}`);
+}
+</script>
+</body>
+</html>
