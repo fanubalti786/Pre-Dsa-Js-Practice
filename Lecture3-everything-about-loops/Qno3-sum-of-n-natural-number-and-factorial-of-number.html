@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<script>
-// let number = Number(prompt("Enter the upper limit for the summation:"));
-// let sum = 0;
-// if(isNaN(number) || number < 0)
-// {
-//     console.log("you have entered invalid number");
-    
-// }
-// else
-// {
-//     for(let i=0; i<=number; i++)
-//     {
-//         sum = sum + i;
-//         console.log(sum)
-//     }
-// }
-// console.log("your total of all number is: "+ sum)
+  </head>
+  <body>
+    <script>
+      // let number = Number(prompt("Enter the upper limit for the summation:"));
+      // let sum = 0;
+      // if(isNaN(number) || number < 0)
+      // {
+      //     console.log("you have entered invalid number");
+
+      // }
+      // else
+      // {
+      //     for(let i=0; i<=number; i++)
+      //     {
+      //         sum = sum + i;
+      //         console.log(sum)
+      //     }
+      // }
+      // console.log("your total of all number is: "+ sum)
+
+      // console.log("\n");
 
 
-// console.log("\n");
 
 
-// calculating factorial assending to desending
-
-// let facnum = Number(prompt("Enter your factorial number:"));
-// let factorial = 1;
-// if(isNaN(facnum) || facnum<=0)
-// {
-//     console.log("Invalid number");
-// }
-// else
-// {
-//     for(let i=1; i<=facnum; i++)
-//     {
-//         factorial = factorial * i;
-
-//     }
-
-// }
-// console.log(`Factorial of ${facnum} is: ${factorial}`);
 
 
-// calculating factorial from desending to assending
-let facnum = Number(prompt("Enter your factorial number:"));
-let factorial = 1;
-if(isNaN(facnum) || facnum<=0)
-{
-    console.log("Invalid number");
-}
-else
-{
-    for(let i=facnum; i>=1; i--)
-    {
-        factorial = factorial * i;
 
-    }
+      // calculating factorial assending to desending
 
-}
-console.log(`Factorial of ${facnum} is: ${factorial}`);
+      // let facnum = Number(prompt("Enter your factorial number:"));
+      // let factorial = 1;
+      // if(isNaN(facnum) || facnum<=0)
+      // {
+      //     console.log("Invalid number");
+      // }
+      // else
+      // {
+      //     for(let i=1; i<=facnum; i++)
+      //     {
+      //         factorial = factorial * i;
 
-</script>
-</body>
+      //     }
+
+      // }
+      // console.log(`Factorial of ${facnum} is: ${factorial}`);
+
+
+
+
+
+
+    //   // calculating factorial from desending to assending
+    //   let facnum = prompt("Enter your factorial number:");
+    //   if (facnum === null) {
+    //     console.log("cancelled");
+    //   } else {
+    //     Number(facnum);
+    //     if (isNaN(facnum) || facnum <= 0) {
+    //       console.log("Invalid number");
+    //     } else {
+    //       let factorial = 1;
+    //       for (let i = facnum; i >= 1; i--) {
+    //         factorial = factorial * i;
+    //       }
+    //       console.log(`Factorial of ${facnum} is: ${factorial}`);
+    //     }
+    //   }
+
+
+
+
+      // we can make more optimize and short with empty‑body loop → fewer lines
+      let facnum2 = prompt("Enter your factorial number:");
+      if (facnum2 === null) {
+        console.log("cancelled");
+      } else {
+        Number(facnum2);
+        if (isNaN(facnum2) || facnum2 <= 0) {
+          console.log("Invalid number");
+        } else {
+          let factorial = 1;
+          for (let i = facnum2; i >= 1; factorial*=i--) {
+          }
+          console.log(`Factorial of ${facnum2} is: ${factorial}`);
+        }
+      }
+    </script>
+  </body>
 </html>
