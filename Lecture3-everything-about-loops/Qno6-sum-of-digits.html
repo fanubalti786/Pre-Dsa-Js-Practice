@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of digits</title>
+</head>
+<body>
+<script>
+let num = +prompt("Enter your Digits for sumation");
+if(!num || !Number.isInteger(num) || num<=0)
+{
+    console.log("Cancelled or Invalid value");
+}
+else
+{
+    let sum = 0;
+    while(num>0)
+    {
+        let rem = num%10;
+        sum += rem;
+        num = Math.floor(num/10);
+    }
+    console.log("The sum of digit is: " + sum);
+    
+}
+</script>
+</body>
+</html>
