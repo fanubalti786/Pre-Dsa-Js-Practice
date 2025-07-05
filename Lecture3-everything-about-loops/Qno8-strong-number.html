@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reverse of number</title>
+    <title>block number</title>
 </head>
 <body>
 <script>
@@ -14,12 +14,27 @@ if(!num || !Number.isInteger(num) || num<=0)
 }
 else
 {
-    let rev = 0;
+    let sum = 0;
+    let copy = num;
     while(num>0)
     {
+        let fact = 1;
         let rem = num%10;
-        rev = rev * 10 + rem;
+        for(let i = 1; i<=rem; i++)
+        {
+            fact *= i;
+        }
+        sum += fact;
         num = Math.floor(num/10);
+    }
+    if(sum === copy)
+    {
+        console.log(`${copy} its a block number`);
+        
+    }
+    else{
+        console.log(`${copy} it's not a block number`);
+        
     }
     console.log("The sum of digit is: " + rev);
     
