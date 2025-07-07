@@ -1,4 +1,4 @@
-let arr = [0,1,0,1,0,0];
+let arr = [1,0,1,0,1,0,0];
 let j=0, temp;
 for(let i=0; i<arr.length; i++)
 {
