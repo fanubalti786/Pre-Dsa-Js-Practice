@@ -1,0 +1,36 @@
+let prompt = require("prompt-sync")();
+let arr = new Array(5);
+
+for(let i=0; i<arr.length; i++)
+{
+    arr[i] = +prompt(`Enter your ${i} index number: `);
+}
+
+max = Math.max(arr[0] , arr[1]);
+smax = Math.min(arr[0] , arr[1]);
+
+
+for(let i=2; i<arr.length; i++)
+{
+    if(arr[i]>max)
+    {
+        smax = max;
+        max = arr[i];
+    }
+    if(arr[i]>smax && max !== arr[i])
+    {
+       smax = arr[i];
+    }
+}
+
+console.log(max,smax);
+
+arr.splice(0,2,max,smax);
+
+console.log(arr);
+
+
+
+
+
+
