@@ -18,11 +18,26 @@ console.log(temp);
 
 
 // right rotation
-let temp1 = [];
+let temp1 = new Array(arr.length);
+
+for(i=0; i<arr.length; i++)
+{
+    // temp1[(i+k) % arr.length] = arr[i];
+    temp1[(i+k) % arr.length] = arr[i];
+
+}
+console.log(temp1);
+
+
+
+// right rotation
+let temp2 = new Array(arr.length);
 
 for(i=arr.length-1; i>=0; i--)
 {
-    temp1[(i+k) % arr.length] = arr[i];
+    // temp1[(i+k) % arr.length] = arr[i];
+    temp2[(i+k) % arr.length] = arr[i];
+
 }
-console.log(temp1);
+console.log(temp2);
 
