@@ -1,6 +1,4 @@
 // left rotation
-let prompt = require("prompt-sync")();
-let k = +prompt("Enter the value of k: ");
 let arr = [1, 2, 3, 4, 5, 6];
 
 let fval = arr[0];
