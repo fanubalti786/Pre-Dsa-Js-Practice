@@ -1,4 +1,4 @@
-// left rotation
+// left rotation with ascending
 let prompt = require("prompt-sync")();
 let arr = [1, 2, 3, 4, 5, 6];
 let k = +prompt("Enter the value of k: ");
@@ -14,7 +14,7 @@ for (let j = 0; j < k; j++) {
 
 console.log(arr);
 
-// right rotation
+// right rotation with descending but ascending not possible
 
 let arr1 = [1, 2, 3, 4, 5, 6];
 

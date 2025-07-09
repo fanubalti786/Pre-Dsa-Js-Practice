@@ -17,7 +17,7 @@ console.log(temp);
 
 
 
-// right rotation
+// right rotation with ascending method
 let temp1 = new Array(arr.length);
 
 for(i=0; i<arr.length; i++)
@@ -30,7 +30,7 @@ console.log(temp1);
 
 
 
-// right rotation
+// right rotation with descending method
 let temp2 = new Array(arr.length);
 
 for(i=arr.length-1; i>=0; i--)
