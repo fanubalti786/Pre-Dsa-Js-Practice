@@ -2,7 +2,7 @@ let stockPrice = [7,1,5,3,6,4];
 let profit = 0;
 let min = stockPrice[0];
 
-for(let i = 0; i<=stockPrice.length; i++)
+for(let i = 0; i<stockPrice.length; i++)
 {
     if(stockPrice[i] < min)
     {
